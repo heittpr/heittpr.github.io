@@ -20,12 +20,18 @@
       }
       body * {
         color: #212121;
+        text-decoration: none;
       }
       h1, h2 {
         line-height: 1.2;
       }
-      a:hover {
-        color: #616161;
+      a svg {
+        fill: currentColor;
+        width: 1.25em;
+        height: 1.25em;
+      }
+      a svg:hover {
+        fill: #616161;
       }
     </style>
   </head>
@@ -36,12 +42,24 @@
     from Belo Horizonte, Brazil
   </p>
   <nav>
-    <a href="mailto:heitor@heittpr.io">e-mail</a>
-    <a href="https://github.com/heittpr">gh</a>
-    <a href="https://stackoverflow.com/users/13579295">so</a>
-    <a href="https://www.linkedin.com/in/heittpr/">in</a>
-    <a href="https://twitter.com/heittpr">tt</a>
-    <a rel="me" href="https://octodon.social/@heittpr">md</a>
+    <a aria-label="e-mail" href="mailto:heitor@heittpr.io">
+      <svg><use xlink:href="icons.svg#email"/></svg>
+    </a>
+    <a aria-label="github" href="https://github.com/heittpr">
+      <svg><use xlink:href="icons.svg#github"/></svg>
+    </a>
+    <a aria-label="stack overflow" href="https://stackoverflow.com/users/13579295">
+      <svg><use xlink:href="icons.svg#stackoverflow"/></svg>
+    </a>
+    <a aria-label="linkedin" href="https://www.linkedin.com/in/heittpr/">
+      <svg><use xlink:href="icons.svg#linkedin"/></svg>
+    </a>
+    <a aria-label="twitter" href="https://twitter.com/heittpr">
+      <svg><use xlink:href="icons.svg#twitter"/></svg>
+    </a>
+    <a aria-label="mastodon" rel="me" href="https://octodon.social/@heittpr">
+      <svg><use xlink:href="icons.svg#mastodon"/></svg>
+    </a>
   </nav>
   <h2>skills / interests</h2>
   <ul>
